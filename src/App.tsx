@@ -1,18 +1,22 @@
 import React from 'react'
 import logo from './logo.svg'
 import './App.css'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Buyflow, { ProductIds } from './buyflow/Buyflow'
+import { DESIGNER_INS_ROUTE, DEV_INS_ROUTE } from './routes'
 
-const App = () => {
+const App = (): React.ReactElement => {
   return (
-    <Router>
+    <BrowserRouter>
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
         </header>
         <Switch>
-          <Route path="/buy/insurance_dev">
+          <Route path={DEV_INS_ROUTE}>
+            <Buyflow productId={ProductIds.devIns} />
+          </Route>
+          <Route path={DESIGNER_INS_ROUTE}>
             <Buyflow productId={ProductIds.devIns} />
           </Route>
           <Route path="/">
@@ -21,7 +25,7 @@ const App = () => {
           </Route>
         </Switch>
       </div>
-    </Router>
+    </BrowserRouter>
   )
 }
 
