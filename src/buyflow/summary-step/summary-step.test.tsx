@@ -20,6 +20,7 @@ describe('SummaryStep', () => {
             firstName: FIRST_NAME,
             lastName: LAST_NAME,
           }}
+          callbackRoute="/"
         />
       </Router>
     )

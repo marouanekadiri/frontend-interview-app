@@ -8,9 +8,13 @@ interface SummaryStepProps {
     firstName?: string
     lastName?: string
   }
+  callbackRoute: string
 }
 
-const SummaryStep: React.FC<SummaryStepProps> = ({ collectedData }) => {
+const SummaryStep: React.FC<SummaryStepProps> = ({
+  collectedData,
+  callbackRoute,
+}) => {
   return (
     <>
       {collectedData.email && <div>Email: {collectedData.email}</div>}
@@ -20,7 +24,7 @@ const SummaryStep: React.FC<SummaryStepProps> = ({ collectedData }) => {
       )}
       {collectedData.lastName && <div>Last name: {collectedData.lastName}</div>}
       <div>
-        <Link to="/purchased=dev_ins">Purchase</Link>
+        <Link to={callbackRoute}>Purchase</Link>
       </div>
     </>
   )

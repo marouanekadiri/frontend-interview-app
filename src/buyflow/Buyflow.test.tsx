@@ -45,6 +45,10 @@ describe('Buyflow', () => {
 
     // verify summary
     expect(screen.getByRole('link')).toHaveTextContent('Purchase')
+    expect(screen.getByRole('link')).toHaveAttribute(
+      'href',
+      DEVINS_CALLBACK_ROUTE
+    )
     expect(screen.getByText(new RegExp(VALID_EMAIL))).toBeInTheDocument()
     expect(
       screen.getByText(new RegExp(VALID_AGE.toString()))
@@ -96,6 +100,10 @@ describe('Buyflow', () => {
     fireEvent.submit(screen.getByRole('button'))
     // verify summary
     expect(screen.getByRole('link')).toHaveTextContent('Purchase')
+    expect(screen.getByRole('link')).toHaveAttribute(
+      'href',
+      DESIGNER_INS_CALLBACK_ROUTE
+    )
     expect(screen.getByText(`First name: ${FIRST_NAME}`)).toBeInTheDocument()
     expect(screen.getByText(`Last name: ${LAST_NAME}`)).toBeInTheDocument()
     expect(screen.getByText(`Email: ${VALID_EMAIL}`)).toBeInTheDocument()

@@ -46,7 +46,10 @@ const Buyflow: React.FC<BuyflowProps> = ({ productId }) => {
     <>
       <h4>Buying {PRODUCT_IDS_TO_NAMES[productId]}</h4>
       {shouldDisplaySummary ? (
-        <SummaryStep collectedData={collectedData} />
+        <SummaryStep
+          collectedData={collectedData}
+          callbackRoute={PRODUCT_IDS_TO_CALLBACK_ROUTE[productId]}
+        />
       ) : (
         <CurrentStepComponent onSubmit={getStepCallback(currentStep + 1)} />
       )}
