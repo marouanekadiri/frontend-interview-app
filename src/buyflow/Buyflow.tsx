@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import AgeStep from './AgeStep'
+import AgeStep from './age-step'
 import EmailStep from './EmailStep'
 import SummaryStep from './SummaryStep'
 
