@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import AgeStep from './age-step'
-import EmailStep from './EmailStep'
+import EmailStep from './email-step'
 import SummaryStep from './SummaryStep'
 
 interface BuyflowProps {
