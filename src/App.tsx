@@ -18,7 +18,7 @@ const App = (): React.ReactElement => {
             <Buyflow productId={ProductIds.devIns} />
           </Route>
           <Route path={DESIGNER_INS_ROUTE}>
-            <Buyflow productId={ProductIds.devIns} />
+            <Buyflow productId={ProductIds.designerIns} />
           </Route>
           <Route path="/">
             <Home />
