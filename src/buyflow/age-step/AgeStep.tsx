@@ -20,7 +20,7 @@ const AgeStep: React.FC<AgeStepProps> = ({ onSubmit }) => {
       }}
     >
       <div>
-        <label htmlFor="age">Age</label>
+        <label htmlFor="age">Age: </label>
         <input
           id="age"
           type="number"

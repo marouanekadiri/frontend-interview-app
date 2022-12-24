@@ -10,7 +10,7 @@ describe('AgeStep', () => {
 
   it('should render age step', () => {
     render(<AgeStep onSubmit={onSubmit} />)
-    expect(screen.getByLabelText('Age')).toBeInTheDocument()
+    expect(screen.getByLabelText('Age:')).toBeInTheDocument()
     expect(screen.getByRole('spinbutton')).toBeInTheDocument()
     expect(screen.getByRole('button')).toBeInTheDocument()
   })
