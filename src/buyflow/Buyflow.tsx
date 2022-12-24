@@ -1,14 +1,11 @@
 import React, { useState } from 'react'
 import AgeStep from './age-step'
 import EmailStep from './email-step'
-import SummaryStep from './SummaryStep'
+import { ProductIds } from './product-ids'
+import SummaryStep from './summary-step'
 
 interface BuyflowProps {
   productId: ProductIds
-}
-
-export enum ProductIds {
-  devIns = 'dev_ins',
 }
 
 const PRODUCT_IDS_TO_NAMES = {
