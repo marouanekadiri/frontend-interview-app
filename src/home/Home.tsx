@@ -1,3 +1,4 @@
+import React from 'react'
 import { Link } from 'react-router-dom'
 import { DESIGNER_INS_ROUTE, DEV_INS_ROUTE } from '../routes'
 

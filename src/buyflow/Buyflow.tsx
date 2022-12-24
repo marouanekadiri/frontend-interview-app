@@ -33,11 +33,12 @@ const Buyflow: React.FC<BuyflowProps> = ({ productId }) => {
     firstName: '',
     lastName: '',
   })
-  const getStepCallback =
-    (nextStep: number) => (newData: Record<string, string | number>) => {
-      updateData({ ...collectedData, ...newData })
-      setStep(nextStep)
-    }
+  const getStepCallback = (nextStep: number) => (
+    newData: Record<string, string | number>
+  ) => {
+    updateData({ ...collectedData, ...newData })
+    setStep(nextStep)
+  }
   const productSteps = PRODUCT_IDS_TO_STEPS[productId]
   const CurrentStepComponent = productSteps[currentStep]
   const shouldDisplaySummary = currentStep === productSteps.length

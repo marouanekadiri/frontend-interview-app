@@ -5,6 +5,7 @@ interface EmailStepProps {
 }
 
 const isEmailValid = (email: string) =>
+  // eslint-disable-next-line no-useless-escape
   /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
 
 const EmailStep: React.FC<EmailStepProps> = ({ onSubmit }) => {
