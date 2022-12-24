@@ -5,8 +5,12 @@ const Home = (): React.ReactElement => {
   return (
     <>
       <p>Welcome to Getsafe's Insurance</p>
-      <Link to={DEV_INS_ROUTE}>Get started with developer insurance!</Link>
-      <Link to={DESIGNER_INS_ROUTE}>Get started with designer insurance!</Link>
+      <div>
+        <Link to={DEV_INS_ROUTE}>Developer insurance</Link>
+      </div>
+      <div>
+        <Link to={DESIGNER_INS_ROUTE}>Designer insurance</Link>
+      </div>
     </>
   )
 }
