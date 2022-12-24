@@ -21,16 +21,19 @@ const Buyflow: React.FC<BuyflowProps> = (props) => {
     email: '',
     age: 0,
   })
-  const getStepCallback = (nextStep: string) => (field: string, value: any) => {
-    updateData({ ...collectedData, [field]: value })
-    setStep(nextStep)
-  }
+  const getStepCallback =
+    (nextStep: string) => (newData: Record<string, string | number>) => {
+      updateData({ ...collectedData, ...newData })
+      setStep(nextStep)
+    }
   return (
     <>
       <h4>Buying {PRODUCT_IDS_TO_NAMES[props.productId]}</h4>
-      {(currentStep === 'email' && <EmailStep cb={getStepCallback('age')} />) ||
+      {(currentStep === 'email' && (
+        <EmailStep onSubmit={getStepCallback('age')} />
+      )) ||
         (currentStep === 'age' && (
-          <AgeStep cb={getStepCallback('summary')} />
+          <AgeStep onSubmit={getStepCallback('summary')} />
         )) ||
         (currentStep === 'summary' && (
           <SummaryStep collectedData={collectedData} />
