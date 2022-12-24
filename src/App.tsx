@@ -3,6 +3,7 @@ import logo from './logo.svg'
 import './App.css'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Buyflow, { ProductIds } from './buyflow/Buyflow'
+import Home from './home'
 import { DESIGNER_INS_ROUTE, DEV_INS_ROUTE } from './routes'
 
 const App = (): React.ReactElement => {
@@ -20,8 +21,7 @@ const App = (): React.ReactElement => {
             <Buyflow productId={ProductIds.devIns} />
           </Route>
           <Route path="/">
-            <p>Welcome to Getsafe's Developer Insurance</p>
-            <Link to="/buy/insurance_dev">Get started!</Link>
+            <Home />
           </Route>
         </Switch>
       </div>
