@@ -1,2 +1,2 @@
-import EmailStep from './EmailStep'
+import EmailStep from './email-step'
 export default EmailStep

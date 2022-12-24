@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from '@testing-library/react'
-import EmailStep from './EmailStep'
+import EmailStep from './email-step'
 
 const onSubmit = jest.fn()
 

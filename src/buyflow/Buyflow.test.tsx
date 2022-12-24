@@ -1,7 +1,7 @@
 import { render, screen, fireEvent } from '@testing-library/react'
 import { Router } from 'react-router-dom'
 import { createMemoryHistory } from 'history'
-import Buyflow from './Buyflow'
+import Buyflow from './buyflow'
 import { ProductIds } from './product-ids'
 import { DESIGNER_INS_CALLBACK_ROUTE, DEVINS_CALLBACK_ROUTE } from '../routes'
 

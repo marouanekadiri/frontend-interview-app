@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from './logo.svg'
-import './App.css'
+import './app.css'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Buyflow, { ProductIds } from './buyflow'
 import Home from './home'

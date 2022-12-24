@@ -1,7 +1,7 @@
 import { render, screen, fireEvent } from '@testing-library/react'
 import { MemoryRouter, Router } from 'react-router-dom'
 import { createMemoryHistory } from 'history'
-import Home from './Home'
+import Home from './home'
 import { DESIGNER_INS_ROUTE, DEV_INS_ROUTE } from '../routes'
 
 describe('HOME', () => {

@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from '@testing-library/react'
-import FirstAndLastNameStep from './FirstAndLastNameStep'
+import FirstAndLastNameStep from './first-and-last-name-step'
 
 const onSubmit = jest.fn()
 

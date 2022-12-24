@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from '@testing-library/react'
-import AgeStep from './AgeStep'
+import AgeStep from './age-step'
 
 const onSubmit = jest.fn()
 

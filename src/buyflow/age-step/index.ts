@@ -1,2 +1,2 @@
-import AgeStep from './AgeStep'
+import AgeStep from './age-step'
 export default AgeStep
